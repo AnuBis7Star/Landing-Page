@@ -56,10 +56,24 @@ a {
     display: flex;
     background-color: #1f2937;
     height: 500px;
+    justify-content: center;
+    align-items: center;
+}
+
+.left {
+
+}
+
+.right {
+
 }
 
 .information-section {
     height: 500px;
+}
+
+video {
+    height: 300px;
 }
 
 .quote-section {
