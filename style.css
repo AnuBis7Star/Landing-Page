@@ -51,3 +51,36 @@ a {
     flex-shrink: 0;
     gap: 30px;
 }
+
+.hero-section {
+    display: flex;
+    background-color: #1f2937;
+    height: 500px;
+}
+
+.information-section {
+    height: 500px;
+}
+
+.quote-section {
+    height: 500px;
+    background-color: #E5E7EB;
+}
+
+.call-to-action-section {
+    height: 300px;
+}
+
+.footer {
+    display: flex;
+    background-color: #1f2937;
+    height: 100px;
+    margin: 0px;
+    padding: 0px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    font-size: 18px;
+    color: #E5E7EB;
+    font-weight: 100;
+}
