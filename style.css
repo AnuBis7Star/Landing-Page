@@ -30,11 +30,13 @@ a {
     padding: 0px;
     justify-content: space-between;
     flex-shrink: 0;
+
+    align-items: center;
+    padding: 0 250px;
 }
 
 .header-logo {
     margin: 0px;
-    margin-left: 200px;
     padding: 0px;
     font-size: 24px;
     font-weight: 900;
@@ -46,7 +48,6 @@ a {
 .header-links {
     display: flex;
     align-items: center;
-    margin-right: 200px;
     padding: 0px;
     flex-shrink: 0;
     gap: 30px;
@@ -60,18 +61,13 @@ a {
     height: 500px;
     align-items: center; 
     justify-content: space-between;
+    padding: 0 250px;
 }
 
 .left {
-    margin-left: 200px;
     width: 500px;
-    flex-shrink: 0;
-}
-
-h1 {
-    font-size: 48px;
-    color: #f9faf9;
-    font-weight: 900;
+    flex-shrink: 1;
+    min-width: 350px;
 }
 
 .left p {
@@ -80,8 +76,10 @@ h1 {
     font-weight: 100;
 }
 
-.right {
-    margin-right: 200px;
+h1 {
+    font-size: 48px;
+    color: #f9faf9;
+    font-weight: 900;
 }
 
 .first-button {
@@ -101,13 +99,78 @@ video {
 
 
 /* Innfo section */
+.info-title {
+    text-align: center;
+    padding: 25px;
+    font-size: 36px;
+    font-weight: 900;
+    color: #1F2937;
+
+}
+
 .information-section {
-    height: 500px;
+    display: flex;
+    height: 400px;
+    align-items: center;
+    flex-direction: column;
+}
+
+.boxes {
+    display: flex;
+    gap: 20px;  
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    border: 5px solid #3882F6;
+    border-radius: 20px;
+    
+}
+
+.box-text {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.box-text p {
+    margin: 10px;
+    text-align: center;
+    max-width: 150px;
+    color:#747576;
+}
+
+.text-boxes {
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
 
 .quote-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: 500px;
     background-color: #E5E7EB;
+    padding-left:350px;
+    padding-right: 350px;
+}
+
+.quote {
+    font-size: 36px;
+    font-weight: 100;
+    font-style: italic;
+    margin: 0px;
+}
+
+.quote-subtext {
+    margin:0px;
+    padding: 0px;
+    align-self: flex-end;
+    font-size: 24px;
 }
 
 .call-to-action-section {
