@@ -28,11 +28,8 @@ a {
     height: 50px;
     margin: 0px;
     padding: 0px;
-    justify-content: space-between;
-    flex-shrink: 0;
-
+    justify-content: space-around;
     align-items: center;
-    padding: 0 250px;
 }
 
 .header-logo {
@@ -41,7 +38,6 @@ a {
     font-size: 24px;
     font-weight: 900;
     color: #F9FAF8;
-    align-self: center;
     flex-shrink: 0;
 }
 
@@ -95,6 +91,12 @@ h1 {
 
 video {
     height: 300px;
+    transition: filter 0.3s ease;
+
+}
+
+video:hover {
+    filter: brightness(120%);
 }
 
 
@@ -110,14 +112,15 @@ video {
 
 .information-section {
     display: flex;
-    height: 400px;
     align-items: center;
     flex-direction: column;
+    padding-bottom: 100px;
 }
 
 .boxes {
     display: flex;
     gap: 20px;  
+    flex-wrap: wrap;
 }
 
 .box {
@@ -125,13 +128,13 @@ video {
     height: 200px;
     border: 5px solid #3882F6;
     border-radius: 20px;
-    
 }
 
 .box-text {
     display: flex;
     align-items: center;
     flex-direction: column;
+    flex: 1;
 }
 
 
@@ -148,22 +151,32 @@ video {
     text-align: center;
 }
 
+.quote-section2 {
+    background-color: #E5E7EB;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    
+}
+
 .quote-section {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 500px;
-    background-color: #E5E7EB;
-    padding-left:350px;
-    padding-right: 350px;
-}
 
+
+    max-width: 800px;
+    flex-shrink: 0;
+}
 .quote {
     font-size: 36px;
     font-weight: 100;
     font-style: italic;
     margin: 0px;
+    flex-shrink: 0;
+    
+
 }
 
 .quote-subtext {
@@ -173,16 +186,51 @@ video {
     font-size: 24px;
 }
 
-.call-to-action-section {
-    height: 300px;
+.cta-section {
+    padding: 100px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.action-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 1200px;
+    height: 150px;
+    background-color: #3882F6;
+    border-radius: 10px;
+    margin: 0px 20px;
+}
+
+.cta-button {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 10px 40px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.cta-text .text1 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #F9FAF8;
+}
+
+.cta-text .text2 {
+    font-size: 16px;
+    font-weight: 100;
+    color: #E5E7EB;
 }
 
 .footer {
     display: flex;
     background-color: #1f2937;
-    height: 100px;
     margin: 0px;
-    padding: 0px;
+    padding: 25px;
     justify-content: center;
     align-items: center;
     flex-shrink: 0;
